@@ -48,17 +48,6 @@ do{
 }
 while(i < 2);
 
-
-
-
-
-
-
-
-
-
-
-
 if(personalMovieDB.count < 10){
     console.log("Просмотрено довольно мало фильмовв");
 }else if(personalMovieDB.count >= 10 && personalMovieDB.count < 30){
@@ -68,8 +57,6 @@ if(personalMovieDB.count < 10){
 }else{
     console.log("произошла ошибка");
 }
-
-
 
 console.log(personalMovieDB);
 
