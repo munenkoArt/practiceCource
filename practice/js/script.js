@@ -66,6 +66,35 @@ function writeYourGenres(){
 writeYourGenres();
 
 
+function learnJs(lang, callback){
+    console.log(`я учу: ${lang}`);
+    callback();
+}
+
+function done(){
+    console.log('я прошел этот урок!!');
+}
+
+learnJs('Java script', done);
+
+
+
+
+function homework(sub, callback){
+    console.log(`what do you wont from ${sub}`);
+    callback();
+}
+
+homework('me', function(){
+    console.log('i em a superman');
+});
+
+
+
+
+
+
+
 // let i = 0;
 
 // do{
