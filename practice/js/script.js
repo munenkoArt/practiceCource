@@ -65,7 +65,7 @@ function writeYourGenres(){
 }
 writeYourGenres();
 
-
+// функция колбек ********************************
 function learnJs(lang, callback){
     console.log(`я учу: ${lang}`);
     callback();
@@ -77,9 +77,6 @@ function done(){
 
 learnJs('Java script', done);
 
-
-
-
 function homework(sub, callback){
     console.log(`what do you wont from ${sub}`);
     callback();
@@ -90,7 +87,24 @@ homework('me', function(){
 });
 
 
+// использование функции обертки при условии что нам нужно передать функцию с аргументами как аргумент в другую функцию 
 
+function first(params, callback){
+    console.log('hello world!!' + `${params}`);
+    callback();
+}
+
+function second222(a, b){
+    console.log(a + b);
+}
+
+
+first(`it is serghii!!! love you `, function(){// использование функции обертки 
+    // для передачи параметров без мгновенного визова колбек функции
+    second222(3,6);
+}); 
+// если передать в аргумент функцию колбек с аргументом сразу в скобках  
+// то порядок выполнения  будет сбит и колбек выполнится сразу не дожидаясь  выполнения основной ф=и
 
 
 
