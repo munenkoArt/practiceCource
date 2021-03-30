@@ -20,7 +20,8 @@
 // });
 
 
-// // использование функции обертки при условии что нам нужно передать функцию с аргументами как аргумент в другую функцию  -->
+// // использование функции обертки при условии что нам нужно передать функцию с аргументами как 
+// аргумент в другую функцию  -->
 
 // function first(params, callback){
 //     console.log('hello world!!' + `${params}`);
@@ -141,45 +142,74 @@
 
 
 
-for(let i = 1; i <= 50; i++ ){
-    console.log(i);
-}
+// for(let i = 1; i <= 50; i++ ){
+//     console.log(i);
+// }
 
-let i = 1;
-while(i<= 50){
-    console.log(i);
-    i++;
-}
+// let i = 1;
+// while(i<= 50){
+//     console.log(i);
+//     i++;
+// }
 
-let item = 1;
-do{
-    console.log(item);
-    item++;
-}
-while(item <= 50);
+// let item = 1;
+// do{
+//     console.log(item);
+//     item++;
+// }
+// while(item <= 50);
 
+// let arr = [1,2,3,4,5];
+
+// for(let i = 0; i < arr.length; i++){
+//     console.log(arr[i]);
+// }
+
+// let arr2 = [2,3,4,5];
+// let result = 1;
+// for(let i = 0; i < arr2.length; i++){
+//     result = result * arr2[i];
+//     console.log(result);
+// }
+// console.log(result);
+
+
+// let obj ={
+//     Минск: "Беларусь",
+//     Москва: "россия",
+//     Киев: "Украина",
+// };
+
+// for(let key in obj){
+//     console.log(`${key} - это ${obj[key]}`);
+// }
+// let i = 1;
+// // while(i <= 100 ){
+// //     console.log(i);
+// //     i++;
+// // }
+let n = 0;
+for (let i = 0; i < 100; i++){          //сумма чисел от 1 до 100
+     n = n + (i + 1);
+     
+}
+console.log(n);
+
+
+let result = 0;
 let arr = [1,2,3,4,5];
-
 for(let i = 0; i < arr.length; i++){
-    console.log(arr[i]);
-}
-
-let arr2 = [2,3,4,5];
-let result = 1;
-for(let i = 0; i < arr2.length; i++){
-    result = result * arr2[i];
-    console.log(result);
+   result = result + arr[i];
 }
 console.log(result);
 
 
-let obj ={
-    Минск: "Беларусь",
-    Москва: "россия",
-    Киев: "Украина",
+let obj = {
+    red: 'червоний',
+    green: 'зелений',
+    blue: 'синій',
 };
 
 for(let key in obj){
-    console.log(`${key} - это ${obj[key]}`);
+    console.log(`${key}` + " - " + `${obj[key]}`);
 }
-
