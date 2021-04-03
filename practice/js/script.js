@@ -15,7 +15,7 @@ let personalMovieDB = {
         while(personalMovieDB.count == '' || personalMovieDB.count == null || isNaN(personalMovieDB.count)) {
             personalMovieDB.count = +prompt('Сколько фильмов вы уже посмотрели?', '');
         }
-   },
+    },
    rememberMyFilms: function (){
     for(let i = 0; i < 2; i++){
         const a = prompt('Один из последних просмотреных ильмов?', ''),

@@ -188,28 +188,51 @@
 // //     console.log(i);
 // //     i++;
 // // }
-let n = 0;
-for (let i = 0; i < 100; i++){          //сумма чисел от 1 до 100
-     n = n + (i + 1);
+// let n = 0;
+// for (let i = 0; i < 100; i++){          //сумма чисел от 1 до 100
+//      n = n + (i + 1);
      
-}
-console.log(n);
+// }
+// console.log(n);
 
 
-let result = 0;
-let arr = [1,2,3,4,5];
-for(let i = 0; i < arr.length; i++){
-   result = result + arr[i];
-}
-console.log(result);
+// let result = 0;
+// let arr = [1,2,3,4,5];
+// for(let i = 0; i < arr.length; i++){
+//    result = result + arr[i];
+// }
+// console.log(result);
 
 
-let obj = {
-    red: 'червоний',
-    green: 'зелений',
-    blue: 'синій',
+// let obj = {
+//     red: 'червоний',
+//     green: 'зелений',
+//     blue: 'синій',
+// };
+
+// for(let key in obj){
+//     console.log(`${key}` + " - " + `${obj[key]}`);
+// }
+
+
+
+let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
+
+let personalMovieDB = {
+    count: numberOfFilms,
+    movies:{},
+    actors:{},
+    genres:[],
+    privat: false,
 };
+console.log(personalMovieDB);
 
-for(let key in obj){
-    console.log(`${key}` + " - " + `${obj[key]}`);
-}
+
+let a = prompt('Один из последних просмотреных фильмов?', '');
+let b = +prompt('На сколько оцените его?', '');
+let d = prompt('Один из последних просмотреных фильмов?', '');
+let c = +prompt('На сколько оцените его?', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[d] = c;
+console.log(personalMovieDB);
