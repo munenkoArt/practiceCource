@@ -216,23 +216,47 @@
 
 
 
-let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
+// let numberOfFilms = +prompt('Сколько фильмов вы уже посмотрели?');
 
-let personalMovieDB = {
-    count: numberOfFilms,
-    movies:{},
-    actors:{},
-    genres:[],
-    privat: false,
-};
-console.log(personalMovieDB);
+// let personalMovieDB = {
+//     count: numberOfFilms,
+//     movies:{},
+//     actors:{},
+//     genres:[],
+//     privat: false,
+// };
+// console.log(personalMovieDB);
 
 
-let a = prompt('Один из последних просмотреных фильмов?', '');
-let b = +prompt('На сколько оцените его?', '');
-let d = prompt('Один из последних просмотреных фильмов?', '');
-let c = +prompt('На сколько оцените его?', '');
+// let a = prompt('Один из последних просмотреных фильмов?', '');
+// let b = +prompt('На сколько оцените его?', '');
+// let d = prompt('Один из последних просмотреных фильмов?', '');
+// let c = +prompt('На сколько оцените его?', '');
 
-personalMovieDB.movies[a] = b;
-personalMovieDB.movies[d] = c;
-console.log(personalMovieDB);
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[d] = c;
+// console.log(personalMovieDB);
+
+
+
+// let arr = {
+//     two:[],
+// };
+
+// for(let i = 1; i <=3 ; i++){
+//     let ask = prompt(`Bаша улюбленна страва під номером ${i}`, '');
+//     if(!ask){
+//         console.log('Ви не правильно ввели дані!!!');
+//         i--;
+//     }else{
+//         arr.two[i - 1] = ask; 
+//     }
+// }
+// console.log(arr);
+
+// let a = [1,2,3];
+// let b = [1,2,3];
+
+
+
+console.log(+'infinity');
